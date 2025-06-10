@@ -5,18 +5,17 @@
     <title>Bible Verse Generator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="verse-container" id="verse-container">
         <!-- Verse -->
         <div class="verse-text">
-            <i class="fas fa-quote-left"></i>
-            <span id="verse">Lorem nostrum totam adipisci aperiam placeat vero fugit repellendus nam similique ducimus voluptas officiis quam sapiente quis quos culpa in, vel quibusdam.</span>
+            <i class="fas fa-quote-left" id="quote-symbol"></i>
+            <span id="verse"></span>
         </div>
         <!-- Author -->
         <div class="verse-author">  
-            <span id="author">IDKKK</span>
+            <span id="author"></span>
         </div>
         <!-- Buttons -->
         <div class="button-container">
@@ -26,5 +25,10 @@
             <button id="new-verse">New Verse</button>
         </div>
     </div>
-</body> 
+
+    <!-- loader -->
+    <div class="loader" id="loader"></div>
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
 </html>
