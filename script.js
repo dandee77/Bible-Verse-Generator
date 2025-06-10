@@ -21,6 +21,9 @@ function populateVerse() {
     loading();
     authorText.textContent = apiData.author;
     verseText.textContent = apiData.verse;
+    verseContainer.classList.remove('fade-in');
+    void verseText.offsetWidth;
+    verseContainer.classList.add('fade-in');
     complete();
 }
 
@@ -36,7 +39,10 @@ async function getData() {
         apiData = {author: a, verse: v};
         populateVerse();  
     } catch (error) {
-        alert(error);
+        console.error("Failed to fetch Bible verse:", error);
+        authorText.textContent = "Oops! Couldn't load a verse.";
+        verseText.textContent = "";
+        complete();
     }
 }
 
