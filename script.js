@@ -40,8 +40,8 @@ async function getData() {
         populateVerse();  
     } catch (error) {
         console.error("Failed to fetch Bible verse:", error);
-        authorText.textContent = "Oops! Couldn't load a verse.";
-        verseText.textContent = "";
+        authorText.textContent = "Admin";
+        verseText.textContent = "Oops! Couldn't load a verse.";
         complete();
     }
 }
