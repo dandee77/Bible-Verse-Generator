@@ -18,16 +18,14 @@ async function selectMediaStream() {
 }
 
 button.addEventListener('click', async () => {
-  if (!document.pictureInPictureElement) {
-    selectMediaStream();
-  }
-  else {
-    await document.exitPictureInPicture();
-    videoElement.srcObject.getTracks().forEach(track => track.stop());
-    videoElement.srcObject = null;
-    selectMediaStream();
-  }
+    if (!document.pictureInPictureElement) {
+        selectMediaStream();
+    }
+    else {
+        await document.exitPictureInPicture();
+        videoElement.srcObject.getTracks().forEach(track => track.stop());
+        videoElement.srcObject = null;
+        selectMediaStream();
+    }
 });
 
-// on load
-// selectMediaStream();
