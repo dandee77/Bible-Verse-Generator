@@ -2,33 +2,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bible Verse Generator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Mini Projects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="verse-container" id="verse-container">
-        <!-- Verse -->
-        <div class="verse-text">
-            <i class="fas fa-quote-left" id="quote-symbol"></i>
-            <span id="verse"></span>
-        </div>
-        <!-- Author -->
-        <div class="verse-author">  
-            <span id="author"></span>
-        </div>
-        <!-- Buttons -->
-        <div class="button-container">
-            <button class="twitter-button" id="twitter" title="Tweet This!">
-                <i class="fab fa-twitter"></i>
-            </button>
-            <button id="new-verse">New Verse</button>
-        </div>
-    </div>
 
-    <!-- loader -->
-    <div class="loader" id="loader"></div>
-    <!-- script -->
+    <header>
+        <div>
+            <hr>
+            <h1>Mini Projects</h1>
+            <p>A collection of my small creative works</p>
+        </div>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Project Name</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-href="Bible_Verse_Generator">
+                    <td data-label="#">01</td>
+                    <td data-label="Project Name">Bible Verse Generator</td>
+                    <td data-label="Date">June 10, 2025</td>
+                </tr>
+                <tr data-href="Infinity_Scroll/">
+                    <td data-label="#">02</td>
+                    <td data-label="Project Name">Infinity Scroll</td>
+                    <td data-label="Date">June 11, 2025</td>
+                </tr>
+                <tr data-href="Picture_In_Picture/">
+                    <td data-label="#">03</td>
+                    <td data-label="Project Name">Picture In Picture</td>
+                    <td data-label="Date">June 12, 2025</td>
+                </tr>
+                <tr data-href="Joke_Teller/">
+                    <td data-label="#">04</td>
+                    <td data-label="Project Name">Joke Teller</td>
+                    <td data-label="Date">June 13, 2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
