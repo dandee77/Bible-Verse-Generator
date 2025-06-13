@@ -96,11 +96,17 @@ function updateProgress(event) {
         currentSeconds = `0${currentSeconds}`;
     }
     currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`;
-    if (currentTime >= duration) {
-        nextSong();
-    }
+}
+
+function setProgressBar(event) {
+    const width = this.clientWidth;
+    const clickX = event.offsetX;
+    const duration = music.duration;
+    music.currentTime = (clickX / width) * duration;
 }
 
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 music.addEventListener('timeupdate', updateProgress);
+music.addEventListener('ended', nextSong);
+progressContainer.addEventListener('click', setProgressBar);
